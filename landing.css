@@ -1,0 +1,96 @@
+/* Base Styles */
+/*body {*/
+/*  margin: 0;*/
+/*  font-family: 'Lato', sans-serif;*/
+/*  background-color: #f9f9f9;*/
+/*  color: #333;*/
+/*}*/
+
+/* Landing Text */
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-text h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  padding: 1rem;
+  user-select: none;
+  color: #ff007f;
+}
+
+.landing-text h6 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #555;
+}
+
+/* Scroll Down Animation */
+.scrolldown {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #7e7d7d;
+  border-right: 2px solid #b1b0b0;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2) {
+  transform: translate(0, 0);
+  animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+.scrolldown {
+  position: relative;   /* instead of absolute */
+  /* margin: 2rem auto;    centers and adds space */
+  /* width: 40px; */
+  height: 40px;
+  transform: rotate(45deg);
+}

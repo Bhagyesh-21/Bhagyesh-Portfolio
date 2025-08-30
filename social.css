@@ -1,0 +1,51 @@
+/* Section Card */
+#me .card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Resume Button */
+#me .btn {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #0077b5;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#me .btn:hover {
+  background: #005582;
+}
+
+/* Social Links */
+#me .social-links {
+  margin-top: 15px;
+}
+
+#me .social-links a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#me .social-links a:hover {
+  transform: scale(1.2);
+}
+
+#me .social-links a:first-child:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+#me .social-links a:last-child:hover {
+  color: #000; /* GitHub Black */
+}

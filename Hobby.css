@@ -1,0 +1,18 @@
+.hobbies ul {
+  list-style: none;           /* remove default bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;            /* wrap to new line on small screens */
+  gap: 10px;
+}
+
+.hobbies li {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
